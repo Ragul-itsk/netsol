@@ -2158,17 +2158,7 @@ h6 {
   transform: translateY(-20%);
   transition: opacity 500ms ease, transform 500ms ease;
 }
-.blog-card-two__image__link::before, .blog-card-two__image__link::after {
-  content: "";
-  width: 32px;
-  height: 2px;
-  background-color: var(--ienet-white, #fff);
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 .blog-card-two__image__link::after {
   transform: translate(-50%, -50%) rotate(90deg);
 }
