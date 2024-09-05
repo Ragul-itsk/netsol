@@ -5957,7 +5957,7 @@ body.megamenu-popup-active .mobile-nav__content {
   border: 10px solid var(--ienet-white, #fff);
   font-size: 24px;
   line-height: 34px;
-  padding: 44px 0 40px 20px;
+  padding: 44px 0 40px 0px;
   font-weight: 600;
   color: var(--ienet-white, #fff);
 }
@@ -12245,7 +12245,7 @@ body.megamenu-popup-active .mobile-nav__content {
   align-items: center;
 }
 .ienet-breadcrumb li:not(:last-of-type)::after {
-  content: ":";
+  content: "/";
   position: relative;
   top: -1px;
   margin-left: 4px;
@@ -14308,7 +14308,7 @@ body.megamenu-popup-active .mobile-nav__content {
   -webkit-mask-position: center center;
   mask-position: center center;
   -webkit-mask-size: cover;
-  mask-size: cover;
+  mask-size: unset;
 }
 .about-one__image__one img {
   max-width: 100%;

@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netsol | Leading ICT / ELV & Security Solutions Provider in Kuwait</title>
     <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon.png" />
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
     <meta name="keyword" content="ICT solutions Kuwait, CCTV / Access & Security systems, Active & Passive network infrastructure, Audio Visual & Signage">
     <meta name="description" content="Explore Netsol's comprehensive Data / Active / CCTV / Access / Audio Visual & Security & LED Signage solutions. From network infrastructure to advanced Integrated systems, we empower businesses across Kuwait. Get in touch today!" />
@@ -38,6 +38,40 @@
 
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/ienet.css" />
+    <style>
+
+
+/* Flying effect */
+@keyframes flying {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); } /* Adjust distance */
+  100% { transform: translateY(0px); }
+}
+
+.scroll-moving-container {
+  position: fixed;
+  top: 200px; /* Fixed position */
+  left: 20px; /* Fixed position */
+  width: 100px; /* Container width */
+  height: auto; /* Adjust height if necessary */
+  z-index: 999;
+}
+
+.scroll-moving-image{
+    width: 200px;
+}
+/* Flying animation applied to container */
+.flying .scroll-moving-image {
+  animation: flying 3s infinite ease-in-out; /* Apply floating effect */
+}
+@media (max-width: 1400px) {
+    .scroll-moving-container {
+        display: none; /* Or any other restrictive styles */
+    }
+}
+
+
+    </style>
 </head>
 
 <body class="custom-cursor">
@@ -62,11 +96,7 @@
                             <span class="topbar-one__info__icon"><i class="icon-maps-and-flags"></i></span>
                             2, First Floor, Salmiya Center Complex, Hadiya 52285 - Kuwait
                         </li>
-                        <!-- <li class="topbar-one__info__item">
-                            <span class="topbar-one__info__icon"><i class="icon-maps-and-flags"></i></span>
-                            1211 Madison Ave, New York, NY
-                        </li> -->
-                    </ul><!-- /.list-unstyled topbar-one__info -->
+                    </ul>
                     <div class="topbar-one__right">
                         <div class="topbar-one__social">
 
@@ -99,8 +129,7 @@
                         <a href="index.html">
                             <img src="assets/images/netsol-white.png" alt="Ienet HTML" height="80">
                         </a>
-                    </div><!-- /.main-header__logo -->
-                    <!-- <a href="#" class="main-header__toggler"><span class="icon-menu"></span></a> -->
+                    </div>
                     <nav class="main-header__nav main-menu">
                         <ul class="main-menu__list">
 
@@ -121,104 +150,6 @@
                             <li>
                                 <a href="about.html">Project</a>
                             </li>
-                            <!-- <li class="dropdown">
-                                <a href="#">Pages</a>
-                                <ul>
-                                    <li class="dropdown">
-                                        <a href="#">Movies</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="movie.html">Movies Page</a></li>
-                                            <li><a href="movie-carousel.html">Movies Carousel</a></li>
-                                            <li><a href="movie-details.html">Movies Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#">Teams</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="team.html">Our Team</a></li>
-                                            <li><a href="team-carousel.html">Team Carousel</a></li>
-                                            <li><a href="team-details.html">Team Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="reviews.html">Testimonials</a></li>
-                                    <li><a href="reviews-carousel.html">Testimonials Carousel</a></li>
-                                    <li><a href="packages.html">Pricing Page</a></li>
-                                    <li><a href="packages-carousel.html">Pricing Carousel</a></li>
-                                    <li>
-                                        <a href="gallery.html">Gallery</a>
-                                        <ul>
-                                            <li><a href="gallery.html">Gallery Masonry</a></li>
-                                            <li><a href="gallery-filter.html">Gallery Filter</a></li>
-                                            <li><a href="gallery-grid.html">Gallery Grid</a></li>
-                                            <li><a href="gallery-carousel.html">Gallery Carousel</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="faq.html">FAQs</a></li>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="404.html">404 Error</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#">Services</a>
-                                <ul>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="services-carousel.html">Services Carousel</a></li>
-                                    <li><a href="service-d-broadband.html">Fiber & Broadband Line</a></li>
-                                    <li><a href="service-d-iptv.html">Fiber Line Smart IPTV</a></li>
-                                    <li><a href="service-d-cyber-security.html">Internet & Cyber Security</a></li>
-                                    <li><a href="service-d-landline.html">Optical Fiber & Landline</a></li>
-                                    <li><a href="service-d-tv.html">Amazon Fire Stick Box TV</a></li>
-                                    <li><a href="service-d-connectivity.html">Smart Data Connectivity</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="dropdown">
-                                <a href="#">Shop</a>
-                                <ul class="sub-menu">
-                                    <li class="dropdown">
-                                        <a href="#">Products</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="products.html">No Sidebar</a></li>
-                                            <li><a href="products-left.html">Left Sidebar</a></li>
-                                            <li><a href="products-right.html">Right Sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="products-carousel.html">Products Carousel</a></li>
-                                    <li><a href="product-details.html">Product Details</a></li>
-                                    <li><a href="cart.html">Cart</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#">News</a>
-                                <ul class="sub-menu">
-                                    <li class="dropdown">
-                                        <a href="#">News grid</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog-grid.html">No Sidebar</a></li>
-                                            <li><a href="blog-grid-left.html">Left Sidebar</a></li>
-                                            <li><a href="blog-grid-right.html">Right Sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#">News list</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog-list.html">No Sidebar</a></li>
-                                            <li><a href="blog-list-left.html">Left Sidebar</a></li>
-                                            <li><a href="blog-list-right.html">Right Sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="blog-carousel.html">News Carousel</a></li>
-                                    <li class="dropdown">
-                                        <a href="#">News Details</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog-details.html">No Sidebar</a></li>
-                                            <li><a href="blog-details-left.html">Left Sidebar</a></li>
-                                            <li><a href="blog-details-right.html">Right Sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li> -->
                             <li>
                                 <a href="blog-carousel.html">Blog</a>
                             </li>
@@ -226,31 +157,23 @@
                                 <a href="contact.html">Contact</a>
                             </li>
                         </ul>
-                    </nav><!-- /.main-header__nav -->
+                    </nav>
                     <div class="main-header__right">
                         <div class="mobile-nav__btn mobile-nav__toggler">
                             <span></span>
                             <span></span>
                             <span></span>
-                        </div><!-- /.mobile-nav__toggler -->
-                        <!-- <a href="#" class="search-toggler main-header__search">
-                            <i class="icon-search" aria-hidden="true"></i>
-                            <span class="sr-only">Search</span>
-                        </a>
-                        <a href="cart.html" class="main-header__cart">
-                            <i class="icon-cart" aria-hidden="true"></i>
-                            <span class="sr-only">Cart</span>
-                        </a> -->
+                        </div>
                         <div class="main-header__call">
                             <div class="main-header__call__icon"><span class="icon-telephone"></span></div>
                             <div class="main-header__call__title">Enquiry Call</div>
-                            <a class="main-header__call__text" href="tel:+96525712496">+965 2571 2496</a>
+                            <a class="main-header__call__text" href="tel:+96525712548">+965 2571 2548</a>
                         </div>
-                    </div><!-- /.main-header__right -->
-                </div><!-- /.main-header__inner -->
-            </div><!-- /.container-fluid -->
-        </header><!-- /.main-header -->
-        <!-- main-slider-start -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
         <section class="main-slider-one">
             <div class="main-slider-one__carousel ienet-owl__carousel owl-carousel" data-owl-options='{
 		"loop": true,
@@ -341,20 +264,23 @@
             </div>
         </section>
         <!-- main-slider-end -->
-
-        <section class="about-one" style="background-image: url(assets/images/shapes/about-1-bg.png);">
+        <!-- <img src="assets/images/resources/about-dron.png" alt="ienet" class="floating-image"> -->
+        <div class="scroll-moving-container">
+            <img src="assets/images/resources/drone-gif.gif" alt="ienet" class="scroll-moving-image">
+        </div>
+        <section class="about-one section" id="section1" style="background-image: url(assets/images/shapes/about-1-bg.png);">
             <div class="about-one__shape" style="background-image: url(assets/images/resources/about-shape-1.png);"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
                         <div class="about-one__image wow fadeInLeft" data-wow-delay="300ms">
                             <div class="about-one__image__one">
-                                <img src="assets/images/resources/about-1-1.jpg" alt="ienet">
+                                <img src="https://img.freepik.com/premium-photo/digital-technology-technical-support-customer-service-concept_555983-3930.jpg" alt="ienet">
                             </div>
                             <div class="about-one__image__bg"></div>
                             <div class="about-one__image__border" style="background-image: url(assets/images/shapes/about-1-border.png);"></div>
                             <div class="about-one__image__two">
-                                <div class="about-one__image__two__inner"><img src="assets/images/resources/about-1-2.jpg" alt="ienet"></div>
+                                <div class="about-one__image__two__inner"><img src="assets/images/resources/about-1-2n.jpg" alt="ienet"></div>
                             </div>
                         </div><!-- /.about-one__image -->
                     </div><!-- /.col-lg-6 -->
@@ -362,399 +288,26 @@
                         <div class="about-one__content">
                             <div class="sec-title text-left">
 
-                                <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-border"></span>About Our Internet<span class="sec-title__tagline__right-border"></span></h6><!-- /.sec-title__tagline -->
+                                <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-border"></span>About Netsol<span class="sec-title__tagline__right-border"></span></h6><!-- /.sec-title__tagline -->
 
-                                <h3 class="sec-title__title bw-split-in-left">We Provide <span>Unlimited</span> Network For You.</h3><!-- /.sec-title__title -->
+                                <h3 class="sec-title__title bw-split-in-left">Leading  <span>Security</span> Provider in Kuwait.</h3><!-- /.sec-title__title -->
                             </div><!-- /.sec-title -->
                             <p class="about-one__content__text">
-                                Donec pretium ornare neque, ac luctus orci ultrices at. Sed blandit eleifend mi, a consectetur tortor varius in. Sed tincidunt
-                                aliquet lorem, eget tincidunt est molestie non. Sed tincidunt aliquet lorem, eget tincidunt est molestie nonac luctus orci ultrices at.
+                                Welcome to Netsol, Kuwait’s leading provider of Information and Communication Technology (ICT) / Extra Low Voltage (ELV) & Security Solutions.
+                                Since our establishment in 2006,
+                                we have partnered with top technology innovators to deliver customized solutions that drive business success across various industries.
                             </p>
                             <ul class="about-one__content__list">
-                                <li><span class="fas fa-check"></span>Super-Fast Dongle</li>
-                                <li><span class="fas fa-check"></span>High Speed Wi-Fi</li>
-                                <li><span class="fas fa-check"></span>Prepaid SIM</li>
-                                <li><span class="fas fa-check"></span>5G Updations</li>
+                                <li><span class="fas fa-check"></span>Innovative</li>
+                                <li><span class="fas fa-check"></span>Reliable</li>
+                                <li><span class="fas fa-check"></span>Comprehensive</li>
+                                <li><span class="fas fa-check"></span>Efficient</li>
                             </ul>
                             <a href="about.html" class="ienet-btn"><span>More About Us<span class="ienet-btn__icon"><i class="fas fa-chevron-right"></i></span></span></a>
                         </div><!-- /.about-one__content -->
                     </div><!-- /.col-lg-6 -->
                 </div><!-- /.row -->
             </div><!-- /.container -->
-        </section><!-- /.about-one -->
-
-        <section class="packages-one">
-            <div class="packages-one__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%" style="background-image: url(assets/images/backgrounds/price-bg-1.jpg);"></div>
-            <!-- /.packages-one__bg -->
-            <div class="container tabs-box">
-                <ul class="packages-one__wrapper">
-                    <li class="packages-one__item">
-                        <div class="packages-one__item__icon"><i class="icon-home"></i></div>
-                        <h3 class="packages-one__item__title">Home Internet</h3>
-                        <ul class="packages-one__item__list">
-                            <li><span class="fas fa-check"></span>Dedicated Network</li>
-                            <li><span class="fas fa-check"></span>Business-friendly SLAs</li>
-                            <li><span class="fas fa-check"></span>24×7 Support</li>
-                            <li><span class="fas fa-check"></span>Flexible & Scalable Bandwidth</li>
-                        </ul>
-                    </li><!-- item -->
-                    <li class="packages-one__item">
-                        <div class="packages-one__item__icon"><i class="icon-corporation"></i></div>
-                        <h3 class="packages-one__item__title">Corporate Internet</h3>
-                        <ul class="packages-one__item__list">
-                            <li><span class="fas fa-check"></span>Dedicated Network</li>
-                            <li><span class="fas fa-check"></span>Business-friendly SLAs</li>
-                            <li><span class="fas fa-check"></span>24×7 Support</li>
-                            <li><span class="fas fa-check"></span>Flexible & Scalable Bandwidth</li>
-                        </ul>
-                    </li><!-- item -->
-                    <li class="packages-one__item">
-                        <div class="packages-one__item__icon"><i class="icon-data-analytics"></i></div>
-                        <h3 class="packages-one__item__title">Data Connectivity</h3>
-                        <ul class="packages-one__item__list">
-                            <li><span class="fas fa-check"></span>Dedicated Network</li>
-                            <li><span class="fas fa-check"></span>Business-friendly SLAs</li>
-                            <li><span class="fas fa-check"></span>24×7 Support</li>
-                            <li><span class="fas fa-check"></span>Flexible & Scalable Bandwidth</li>
-                        </ul>
-                    </li><!-- item -->
-                </ul>
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="sec-title text-left">
-
-                            <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-border"></span>Our Best Plan<span class="sec-title__tagline__right-border"></span></h6><!-- /.sec-title__tagline -->
-
-                            <h3 class="sec-title__title bw-split-in-left">Select Your <span>Best Plan</span></h3><!-- /.sec-title__title -->
-                        </div><!-- /.sec-title -->
-                    </div>
-                    <div class="col-md-4">
-                        <a href="packages.html" class="ienet-btn"><span>View All Service<span class="ienet-btn__icon"><i class="fas fa-chevron-right"></i></span></span></a>
-                    </div>
-                </div>
-                <ul class="packages-one__list tab-buttons list-unstyled">
-                    <li data-tab="#10mbps" class="tab-btn">10 MBPS</li>
-                    <li data-tab="#15mbps" class="tab-btn">15 MBPS</li>
-                    <li data-tab="#20mbps" class="tab-btn active-btn">20 MBPS</li>
-                    <li data-tab="#30mbps" class="tab-btn">30 MBPS</li>
-                    <li data-tab="#40mbps" class="tab-btn">40 MBPS</li>
-                    <li data-tab="#100mbps" class="tab-btn">100 MBPS</li>
-                </ul>
-                <div class="tabs-content">
-                    <div class="tab fadeInUp animated" id="10mbps">
-                        <div class="row gutter-y-30">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$9 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">Basic Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-1.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$12 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">corporate Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-2.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$15 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">Dedicated Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-3.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                        </div>
-                    </div>
-                    <div class="tab fadeInUp animated" id="15mbps">
-                        <div class="row gutter-y-30">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$12 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">Basic Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-1.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$35 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">corporate Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-2.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$20 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">Dedicated Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-3.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                        </div>
-                    </div>
-                    <div class="tab fadeInUp animated active-tab" id="20mbps">
-                        <div class="row gutter-y-30">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$19 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">Basic Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-1.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$39 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">corporate Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-2.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$59 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">Dedicated Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-3.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                        </div>
-                    </div>
-                    <div class="tab fadeInUp animated" id="30mbps">
-                        <div class="row gutter-y-30">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$29 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">Basic Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-1.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$49 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">corporate Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-2.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$69 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">Dedicated Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-3.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                        </div>
-                    </div>
-                    <div class="tab fadeInUp animated" id="40mbps">
-                        <div class="row gutter-y-30">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$19 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">Basic Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-1.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$39 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">corporate Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-2.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$59 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">Dedicated Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-3.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                        </div>
-                    </div>
-                    <div class="tab fadeInUp animated" id="100mbps">
-                        <div class="row gutter-y-30">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$39 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">Basic Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-1.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$59 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">corporate Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-2.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                            <div class="col-lg-4 col-md-6">
-                                <div class="packages-one__card">
-                                    <div class="packages-one__card__price">$89 / <span>month</span></div>
-                                    <h3 class="packages-one__card__title">Dedicated Package</h3>
-                                    <ul class="packages-one__card__list">
-                                        <li><span class="fas fa-check"></span>24hr Unlimited</li>
-                                        <li><span class="fas fa-check"></span>Talk Time N/A</li>
-                                        <li><span class="fas fa-check"></span>Fiber Optics</li>
-                                        <li><span class="fas fa-check"></span>OTC-Free</li>
-                                    </ul>
-                                    <a class="packages-one__card__rm" href="contact.html"><i class="icon-right-chevron"></i></a>
-                                    <div class="packages-one__card__image">
-                                        <img src="assets/images/resources/package-1-3.jpg" alt="ienet">
-                                    </div>
-                                </div>
-                            </div><!-- item -->
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <!-- Feature Start -->
@@ -762,29 +315,29 @@
             <div class="container">
                 <div class="sec-title text-center">
 
-                    <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-border"></span>Our facility<span class="sec-title__tagline__right-border"></span></h6><!-- /.sec-title__tagline -->
+                    <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-border"></span>Our Services<span class="sec-title__tagline__right-border"></span></h6><!-- /.sec-title__tagline -->
 
-                    <h3 class="sec-title__title bw-split-in-left">Our Special <span>Features</span></h3><!-- /.sec-title__title -->
+                    <h3 class="sec-title__title bw-split-in-left">Our Key <span>Services</span></h3><!-- /.sec-title__title -->
                 </div><!-- /.sec-title -->
                 <div class="row">
                     <div class="col-lg-4 wow fadeInLeft" data-wow-delay="00ms">
                         <div class="feature-one__box">
                             <div class="feature-one__box__icon"><i class="icon-dashboard"></i></div>
-                            <h5 class="feature-one__box__title">Ultra-Speed Connection</h5>
+                            <h5 class="feature-one__box__title">ICT Solutions</h5>
                             <p class="feature-one__box__text">
-                                Nulla facilisi. Pellentesque imperdiet,<br> sem et commodo interdum, justo velit.
+                                Optimizing business communication<br>with advanced ICT services.
                             </p>
                         </div>
                         <div class="feature-one__box">
                             <div class="feature-one__box__icon"><i class="icon-tv"></i></div>
-                            <h5 class="feature-one__box__title">250+ TV chanels</h5>
+                            <h5 class="feature-one__box__title">Structured Cabling</h5>
                             <p class="feature-one__box__text">
                                 Nulla facilisi. Pellentesque imperdiet,<br> sem et commodo interdum, justo velit.
                             </p>
                         </div>
                         <div class="feature-one__box">
                             <div class="feature-one__box__icon"><i class="icon-planning"></i></div>
-                            <h5 class="feature-one__box__title">Flexible Plans</h5>
+                            <h5 class="feature-one__box__title">Data Center Solutions</h5>
                             <p class="feature-one__box__text">
                                 Nulla facilisi. Pellentesque imperdiet,<br> sem et commodo interdum, justo velit.
                             </p>
@@ -806,21 +359,21 @@
                     <div class="col-lg-4 wow fadeInRight" data-wow-delay="00ms">
                         <div class="feature-one__box">
                             <div class="feature-one__box__icon"><i class="icon-wifi-router"></i></div>
-                            <h5 class="feature-one__box__title">100% free installation</h5>
+                            <h5 class="feature-one__box__title">Cyber Security</h5>
                             <p class="feature-one__box__text">
                                 Nulla facilisi. Pellentesque imperdiet,<br> sem et commodo interdum, justo velit.
                             </p>
                         </div>
                         <div class="feature-one__box">
                             <div class="feature-one__box__icon"><i class="icon-support"></i></div>
-                            <h5 class="feature-one__box__title">fast support 24/7</h5>
+                            <h5 class="feature-one__box__title">Control Room Solutions</h5>
                             <p class="feature-one__box__text">
                                 Nulla facilisi. Pellentesque imperdiet,<br> sem et commodo interdum, justo velit.
                             </p>
                         </div>
                         <div class="feature-one__box">
                             <div class="feature-one__box__icon"><i class="icon-4k"></i></div>
-                            <h5 class="feature-one__box__title">4K And 8K quality</h5>
+                            <h5 class="feature-one__box__title">Security Solutions</h5>
                             <p class="feature-one__box__text">
                                 Nulla facilisi. Pellentesque imperdiet,<br> sem et commodo interdum, justo velit.
                             </p>
@@ -831,6 +384,8 @@
         </section>
         <!-- Feature End -->
 
+
+
         <section class="mail-one">
             <div class="mail-one__bg" style="background-image: url(assets/images/backgrounds/mail-bg-1.jpg);"></div>
             <!-- /.movie-one__bg -->
@@ -840,18 +395,69 @@
                 <div class="mail-one__content">
                     <div class="sec-title text-left">
 
-                        <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-border"></span>check your area<span class="sec-title__tagline__right-border"></span></h6><!-- /.sec-title__tagline -->
+                        <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-border"></span>Stay Connected<span class="sec-title__tagline__right-border"></span></h6><!-- /.sec-title__tagline -->
 
-                        <h3 class="sec-title__title bw-split-in-left">Check Availability In <span>Your City</span></h3><!-- /.sec-title__title -->
+                        <h3 class="sec-title__title bw-split-in-left">Subscribe for  <span>Fresh Insights</span></h3><!-- /.sec-title__title -->
                     </div><!-- /.sec-title -->
                     <form action="#" data-url="MAILCHIMP_FORM_URL" class="mail-one__newsletter mc-form">
                         <input type="text" name="EMAIL" placeholder="Enter Your Address">
                         <span class="mail-one__newsletter__icon"><i class="icon-location"></i></span>
-                        <button type="submit" class="ienet-btn"><span>Check Availability</span></button>
+                        <button type="submit" class="ienet-btn"><span>Subscribe</span></button>
                         <div class="mc-form__response"></div><!-- /.mc-form__response -->
                     </form><!-- /.footer-widget__newsletter mc-form -->
                 </div>
             </div>
+        </section>
+
+        <section class="service-page">
+            <div class="container">
+                <div class="sec-title text-center">
+
+                    <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-border"></span>Our Works<span class="sec-title__tagline__right-border"></span></h6><!-- /.sec-title__tagline -->
+
+                    <h3 class="sec-title__title bw-split-in-left">Our Featured <span>Projects</span></h3><!-- /.sec-title__title -->
+                </div>
+                <div class="row gutter-y-30">
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
+                        <div class="service-page__item">
+                            <div class="service-page__item__image">
+                                <img src="assets/images/resources/service-2-1.jpg" alt="ienet">
+                            </div>
+                            <div class="service-page__item__content">
+                                <h3 class="service-page__item__title"><a href="service-d-broadband.html">Hilton Garden Inn</a></h3>
+                                <p>Netsol successfully implemented an advanced electronic access control.</p>
+                                <div class="service-page__item__icon"><span class="icon-optical-fiber"></span></div>
+                            </div>
+                        </div>
+                    </div><!-- item -->
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="50ms">
+                        <div class="service-page__item">
+                            <div class="service-page__item__image">
+                                <img src="assets/images/resources/service-2-2.jpg" alt="ienet">
+                            </div>
+                            <div class="service-page__item__content">
+                                <h3 class="service-page__item__title">KIPIC</h3>
+                                <p>Comprehensive data network and security solutions.</p>
+                                <div class="service-page__item__icon"><span class="icon-tv"></span></div>
+                            </div>
+                           
+                        </div>
+                    </div><!-- item -->
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="service-page__item">
+                            <div class="service-page__item__image">
+                                <img src="assets/images/resources/service-2-3.jpg" alt="ienet">
+                            </div>
+                            <div class="service-page__item__content">
+                                <h3 class="service-page__item__title"><a href="service-d-cyber-security.html">PAAET</a></h3>
+                                <p>Extensive access control systems across educational institutions.</p>
+                                <div class="service-page__item__icon"><span class="icon-cyber-security"></span></div>
+                            </div>
+                        </div>
+                    </div><!-- item -->
+                  
+                </div>
+            </div><!-- /.container -->
         </section>
 
         <section class="cta-one">
@@ -868,8 +474,8 @@
                             <div class="cta-one__image__two wow fadeInUp" data-wow-delay="300ms">
                                 <img src="assets/images/resources/cta-1-1.png" alt="ienet">
                             </div>
-                            <div class="cta-one__image__price wow fadeInUp" data-wow-delay="200ms">
-                                Start Form $39 / <span>Month</span>
+                            <div class="cta-one__image__price wow fadeInUp text-center" data-wow-delay="200ms">
+                                <span> Since </span><br>2006
                             </div>
                         </div>
                     </div>
@@ -877,13 +483,12 @@
                         <div class="cta-one__content">
                             <div class="sec-title text-left">
 
-                                <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-border"></span>save your money<span class="sec-title__tagline__right-border"></span></h6><!-- /.sec-title__tagline -->
+                                <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-border"></span>Start Today<span class="sec-title__tagline__right-border"></span></h6><!-- /.sec-title__tagline -->
 
-                                <h3 class="sec-title__title bw-split-in-left">Save Money Your <span>Internet</span> Service With TV Service</h3><!-- /.sec-title__title -->
+                                <h3 class="sec-title__title bw-split-in-left">Your buinsses with <span> next-generation</span> ICT and ELV technology </h3><!-- /.sec-title__title -->
                             </div><!-- /.sec-title -->
                             <p class="cta-one__content__text">
-                                Donec pretium ornare neque, ac luctus orci ultrices at. Sed blandit eleifend mi, a consectetur tortor varius in.
-                                Sed tincidunt aliquet lorem, eget tincidunt est molestie non. Sed tincidunt aliquet lorem, eget tincidunt est molestie
+                                Contact us today to learn how Netsol can help your business thrive with innovative ICT and ELV solutions.
                             </p>
                             <a href="about.html" class="ienet-btn"><span>Get In Touch<span class="ienet-btn__icon"><i class="fas fa-chevron-right"></i></span></span></a>
                         </div>
@@ -892,428 +497,6 @@
             </div><!-- /.container -->
         </section><!-- /.cta-one -->
 
-        <section class="movie-one">
-            <div class="movie-one__bg jarallax" data-jarallax data-speed="0.3" data-imgPosition="50% -100%" style="background-image: url(assets/images/backgrounds/movie-bg-1.jpg);"></div>
-            <!-- /.movie-one__bg -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="sec-title text-left">
-
-                            <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-border"></span>entertainment<span class="sec-title__tagline__right-border"></span></h6><!-- /.sec-title__tagline -->
-
-                            <h3 class="sec-title__title bw-split-in-left">Popular <span>Featured</span> Show</h3><!-- /.sec-title__title -->
-                        </div><!-- /.sec-title -->
-                    </div>
-                    <div class="col-md-4">
-                        <div class="movie-one__nav">
-                            <a href="#" class="movie-one__nav__prev"><i class="icon-left-chevron"></i></a>
-                            <a href="#" class="movie-one__nav__next"><i class="icon-right-chevron"></i></a>
-                        </div><!-- /.testimonials-one__custome-navs -->
-                    </div>
-                </div>
-            </div>
-            <div class="movie-one__carousel owl-carousel ienet-owl__carousel--custom-nav owl-theme ienet-owl__carousel" data-owl-nav-prev=".movie-one__nav__prev" data-owl-nav-next=".movie-one__nav__next" data-owl-options='{
-		"loop": true,
-		"autoplay": true,
-		"margin": 30,
-		"center": false,
-		"nav": false,
-		"dots": true,
-		"smartSpeed": 500,
-		"autoplayTimeout": 10000,
-		"responsive": {
-			"0": {
-				"stagePadding": 50,
-				"items": 1
-			},
-			"500": {
-				"items": 2
-			},
-			"768": {
-				"stagePadding": 100,
-				"items": 2
-			},
-			"992": {
-				"stagePadding": 52,
-				"items": 3
-			},
-			"1200": {
-				"stagePadding": 160,
-				"items": 3
-			},
-			"1300": {
-				"stagePadding": 100,
-				"items": 4
-			},
-			"1400": {
-				"stagePadding": 116,
-				"items": 4
-			},
-			"1600": {
-				"stagePadding": 216,
-				"items": 4
-			},
-			"1800": {
-				"stagePadding": 216,
-				"items": 5
-			}
-		}
-		}'>
-                <div class="item">
-                    <div class="movie-one__item">
-                        <div class="movie-one__item__image">
-                            <img src="assets/images/movie/movie-1-1.jpg" alt="ienet">
-                        </div>
-                        <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                            <i class="fa fa-play"></i>
-                            <i class="ripple"></i>
-                        </a>
-                        <div class="movie-one__item__content">
-                            <h3 class="movie-one__item__title"><a href="movie-details.html">Broken city state</a></h3>
-                            <ul class="movie-one__item__list">
-                                <li><i class="fa fa-star"></i>6.8(Imdb)</li>
-                                <li>1hr : 30mins</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- item -->
-                <div class="item">
-                    <div class="movie-one__item">
-                        <div class="movie-one__item__image">
-                            <img src="assets/images/movie/movie-1-2.jpg" alt="ienet">
-                        </div>
-                        <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                            <i class="fa fa-play"></i>
-                            <i class="ripple"></i>
-                        </a>
-                        <div class="movie-one__item__content">
-                            <h3 class="movie-one__item__title"><a href="movie-details.html">Prem Ratan Dhan</a></h3>
-                            <ul class="movie-one__item__list">
-                                <li><i class="fa fa-star"></i>6.8(Imdb)</li>
-                                <li>1hr : 30mins</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- item -->
-                <div class="item">
-                    <div class="movie-one__item">
-                        <div class="movie-one__item__image">
-                            <img src="assets/images/movie/movie-1-3.jpg" alt="ienet">
-                        </div>
-                        <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                            <i class="fa fa-play"></i>
-                            <i class="ripple"></i>
-                        </a>
-                        <div class="movie-one__item__content">
-                            <h3 class="movie-one__item__title"><a href="movie-details.html">The Jungle Book</a></h3>
-                            <ul class="movie-one__item__list">
-                                <li><i class="fa fa-star"></i>6.8(Imdb)</li>
-                                <li>1hr : 30mins</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- item -->
-                <div class="item">
-                    <div class="movie-one__item">
-                        <div class="movie-one__item__image">
-                            <img src="assets/images/movie/movie-1-4.jpg" alt="ienet">
-                        </div>
-                        <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                            <i class="fa fa-play"></i>
-                            <i class="ripple"></i>
-                        </a>
-                        <div class="movie-one__item__content">
-                            <h3 class="movie-one__item__title"><a href="movie-details.html">The Way of Water</a></h3>
-                            <ul class="movie-one__item__list">
-                                <li><i class="fa fa-star"></i>6.8(Imdb)</li>
-                                <li>1hr : 30mins</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- item -->
-                <div class="item">
-                    <div class="movie-one__item">
-                        <div class="movie-one__item__image">
-                            <img src="assets/images/movie/movie-1-5.jpg" alt="ienet">
-                        </div>
-                        <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                            <i class="fa fa-play"></i>
-                            <i class="ripple"></i>
-                        </a>
-                        <div class="movie-one__item__content">
-                            <h3 class="movie-one__item__title"><a href="movie-details.html">The Dark Knight</a></h3>
-                            <ul class="movie-one__item__list">
-                                <li><i class="fa fa-star"></i>6.8(Imdb)</li>
-                                <li>1hr : 30mins</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- item -->
-                <div class="item">
-                    <div class="movie-one__item">
-                        <div class="movie-one__item__image">
-                            <img src="assets/images/movie/movie-1-6.jpg" alt="ienet">
-                        </div>
-                        <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                            <i class="fa fa-play"></i>
-                            <i class="ripple"></i>
-                        </a>
-                        <div class="movie-one__item__content">
-                            <h3 class="movie-one__item__title"><a href="movie-details.html">Avengers Endgame</a></h3>
-                            <ul class="movie-one__item__list">
-                                <li><i class="fa fa-star"></i>6.8(Imdb)</li>
-                                <li>1hr : 30mins</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- item -->
-                <div class="item">
-                    <div class="movie-one__item">
-                        <div class="movie-one__item__image">
-                            <img src="assets/images/movie/movie-1-7.jpg" alt="ienet">
-                        </div>
-                        <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                            <i class="fa fa-play"></i>
-                            <i class="ripple"></i>
-                        </a>
-                        <div class="movie-one__item__content">
-                            <h3 class="movie-one__item__title"><a href="movie-details.html">Scared to Death</a></h3>
-                            <ul class="movie-one__item__list">
-                                <li><i class="fa fa-star"></i>6.8(Imdb)</li>
-                                <li>1hr : 30mins</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- item -->
-                <div class="item">
-                    <div class="movie-one__item">
-                        <div class="movie-one__item__image">
-                            <img src="assets/images/movie/movie-1-1.jpg" alt="ienet">
-                        </div>
-                        <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                            <i class="fa fa-play"></i>
-                            <i class="ripple"></i>
-                        </a>
-                        <div class="movie-one__item__content">
-                            <h3 class="movie-one__item__title"><a href="movie-details.html">Broken city state</a></h3>
-                            <ul class="movie-one__item__list">
-                                <li><i class="fa fa-star"></i>6.8(Imdb)</li>
-                                <li>1hr : 30mins</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- item -->
-                <div class="item">
-                    <div class="movie-one__item">
-                        <div class="movie-one__item__image">
-                            <img src="assets/images/movie/movie-1-2.jpg" alt="ienet">
-                        </div>
-                        <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                            <i class="fa fa-play"></i>
-                            <i class="ripple"></i>
-                        </a>
-                        <div class="movie-one__item__content">
-                            <h3 class="movie-one__item__title"><a href="movie-details.html">Prem Ratan Dhan</a></h3>
-                            <ul class="movie-one__item__list">
-                                <li><i class="fa fa-star"></i>6.8(Imdb)</li>
-                                <li>1hr : 30mins</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- item -->
-                <div class="item">
-                    <div class="movie-one__item">
-                        <div class="movie-one__item__image">
-                            <img src="assets/images/movie/movie-1-3.jpg" alt="ienet">
-                        </div>
-                        <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                            <i class="fa fa-play"></i>
-                            <i class="ripple"></i>
-                        </a>
-                        <div class="movie-one__item__content">
-                            <h3 class="movie-one__item__title"><a href="movie-details.html">The Jungle Book</a></h3>
-                            <ul class="movie-one__item__list">
-                                <li><i class="fa fa-star"></i>6.8(Imdb)</li>
-                                <li>1hr : 30mins</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- item -->
-                <div class="item">
-                    <div class="movie-one__item">
-                        <div class="movie-one__item__image">
-                            <img src="assets/images/movie/movie-1-4.jpg" alt="ienet">
-                        </div>
-                        <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                            <i class="fa fa-play"></i>
-                            <i class="ripple"></i>
-                        </a>
-                        <div class="movie-one__item__content">
-                            <h3 class="movie-one__item__title"><a href="movie-details.html">The Way of Water</a></h3>
-                            <ul class="movie-one__item__list">
-                                <li><i class="fa fa-star"></i>6.8(Imdb)</li>
-                                <li>1hr : 30mins</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- item -->
-                <div class="item">
-                    <div class="movie-one__item">
-                        <div class="movie-one__item__image">
-                            <img src="assets/images/movie/movie-1-5.jpg" alt="ienet">
-                        </div>
-                        <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                            <i class="fa fa-play"></i>
-                            <i class="ripple"></i>
-                        </a>
-                        <div class="movie-one__item__content">
-                            <h3 class="movie-one__item__title"><a href="movie-details.html">The Dark Knight</a></h3>
-                            <ul class="movie-one__item__list">
-                                <li><i class="fa fa-star"></i>6.8(Imdb)</li>
-                                <li>1hr : 30mins</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- item -->
-                <div class="item">
-                    <div class="movie-one__item">
-                        <div class="movie-one__item__image">
-                            <img src="assets/images/movie/movie-1-6.jpg" alt="ienet">
-                        </div>
-                        <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                            <i class="fa fa-play"></i>
-                            <i class="ripple"></i>
-                        </a>
-                        <div class="movie-one__item__content">
-                            <h3 class="movie-one__item__title"><a href="movie-details.html">Avengers Endgame</a></h3>
-                            <ul class="movie-one__item__list">
-                                <li><i class="fa fa-star"></i>6.8(Imdb)</li>
-                                <li>1hr : 30mins</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- item -->
-                <div class="item">
-                    <div class="movie-one__item">
-                        <div class="movie-one__item__image">
-                            <img src="assets/images/movie/movie-1-7.jpg" alt="ienet">
-                        </div>
-                        <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                            <i class="fa fa-play"></i>
-                            <i class="ripple"></i>
-                        </a>
-                        <div class="movie-one__item__content">
-                            <h3 class="movie-one__item__title"><a href="movie-details.html">Scared to Death</a></h3>
-                            <ul class="movie-one__item__list">
-                                <li><i class="fa fa-star"></i>6.8(Imdb)</li>
-                                <li>1hr : 30mins</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!-- item -->
-            </div>
-        </section>
-
-        <section class="faq-one">
-            <div class="faq-one__shape" style="background-image: url(assets/images/resources/faq-shape-1.png);"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="faq-one__accordion ienet-accrodion" data-grp-name="ienet-accrodion">
-                            <div class="accrodion">
-                                <div class="accrodion-title">
-                                    <h4>
-                                        <span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
-                                        What is broadband internet?
-                                    </h4>
-                                </div><!-- /.accordian-title -->
-                                <div class="accrodion-content">
-                                    <div class="inner">
-                                        <p>
-                                            Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward,
-                                            a new normal that has evolved from generation X is on the
-                                        </p>
-                                    </div><!-- /.accordian-content -->
-                                </div>
-                            </div><!-- /.accordian-item -->
-                            <div class="accrodion active">
-                                <div class="accrodion-title">
-                                    <h4>
-                                        <span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
-                                        How does broadband internet work?
-                                    </h4>
-                                </div><!-- /.accordian-title -->
-                                <div class="accrodion-content">
-                                    <div class="inner">
-                                        <p>
-                                            Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward,
-                                            a new normal that has evolved from generation X is on the
-                                        </p>
-                                    </div><!-- /.accordian-content -->
-                                </div>
-                            </div><!-- /.accordian-item -->
-                            <div class="accrodion">
-                                <div class="accrodion-title">
-                                    <h4>
-                                        <span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
-                                        What is the difference between upload and download speeds?
-                                    </h4>
-                                </div><!-- /.accordian-title -->
-                                <div class="accrodion-content">
-                                    <div class="inner">
-                                        <p>
-                                            Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward,
-                                            a new normal that has evolved from generation X is on the
-                                        </p>
-                                    </div><!-- /.accordian-content -->
-                                </div>
-                            </div><!-- /.accordian-item -->
-                            <div class="accrodion">
-                                <div class="accrodion-title">
-                                    <h4>
-                                        <span class="accrodion-title__icon"></span><!-- /.accrodion-title__icon -->
-                                        What factors can affect broadband speed?
-                                    </h4>
-                                </div><!-- /.accordian-title -->
-                                <div class="accrodion-content">
-                                    <div class="inner">
-                                        <p>
-                                            Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward,
-                                            a new normal that has evolved from generation X is on the
-                                        </p>
-                                    </div><!-- /.accordian-content -->
-                                </div>
-                            </div><!-- /.accordian-item -->
-                        </div>
-                    </div><!-- /.col-lg-6 -->
-                    <div class="col-lg-6">
-                        <div class="faq-one__content">
-                            <div class="sec-title text-left">
-
-                                <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-border"></span>frequently asked questions<span class="sec-title__tagline__right-border"></span></h6><!-- /.sec-title__tagline -->
-
-                                <h3 class="sec-title__title bw-split-in-left">Why Should <span>Work</span> With Us</h3><!-- /.sec-title__title -->
-                            </div><!-- /.sec-title -->
-                            <!-- section-title -->
-                            <div class="faq-one__content__box">
-                                <div class="faq-one__content__box__icon"><i class="icon-wifi-router"></i></div>
-                                <h5 class="faq-one__content__box__title">100% free installation</h5>
-                                <p class="faq-one__content__box__text">
-                                    Nulla facilisi. Pellentesque imperdiet,<br> sem et commodo interdum, justo velit.
-                                </p>
-                            </div>
-                            <div class="faq-one__video" style="background-image: url(assets/images/resources/faq-1-video.jpg);">
-                                <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" class="video-popup">
-                                    <i class="fa fa-play"></i>
-                                    <i class="ripple"></i>
-                                </a>
-                            </div>
-                        </div><!-- /.faq-one__contact -->
-                    </div><!-- /.col-lg-6 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </section><!-- /.faq-one-accordion -->
 
         <section class="testimonials-one">
             <div class="testimonials-one__bg" style="background-image: url(assets/images/shapes/testimonial-bg-1.png);"></div>
@@ -1330,8 +513,7 @@
                                 <h3 class="sec-title__title bw-split-in-left">What Peoples <span>Talked</span> About Us</h3><!-- /.sec-title__title -->
                             </div><!-- /.sec-title -->
                             <p class="testimonials-one__content__text">
-                                Donec pretium ornare neque, ac luctus orci ultrices at. Sed blandit eleifend mi, a consectetur tortor varius in.
-                                Sed tincidunt aliquet lorem, eget tincidunt est molestie non. Sed tincidunt
+                                Discover what our clients are saying about their experiences with us. Their testimonials reflect the trust and satisfaction we consistently deliver.
                             </p>
                             <div class="testimonials-one__nav">
                                 <a href="#" class="testimonials-one__nav__prev"><i class="icon-left-chevron"></i></a>
@@ -1381,8 +563,7 @@
                                             <i class="fa fa-star"></i>
                                         </div><!-- /.testimonials-card__rating -->
                                         <div class="testimonials-card__content">
-                                            Ienet internet Company also impressed us with their transparency regarding costs. The initial quote was accurate,
-                                            and they were upfront about any changes or additional expenses that
+                                            Netsol’s expertise in network solutions has significantly improved our operational efficiency. Their commitment to quality is unmatched, and their support has been instrumental in our success.
                                         </div><!-- /.testimonials-card__content -->
                                         <div class="testimonials-card__author">
                                             <img src="assets/images/resources/testi-1-1.jpg" alt="Anthony B. Castillo">
@@ -1407,8 +588,7 @@
                                             <i class="fa fa-star"></i>
                                         </div><!-- /.testimonials-card__rating -->
                                         <div class="testimonials-card__content">
-                                            Ienet internet Company also impressed us with their transparency regarding costs. The initial quote was accurate,
-                                            and they were upfront about any changes or additional expenses that
+                                            Working with Netsol has been a game-changer for our business. Their solutions are not only cutting-edge but also tailored to our specific needs, making a real difference in how we operate.
                                         </div><!-- /.testimonials-card__content -->
                                         <div class="testimonials-card__author">
                                             <img src="assets/images/resources/testi-1-2.jpg" alt="Sarah Albert">
@@ -1454,7 +634,7 @@
                     </div>
                 </div>
             </div><!-- /.container -->
-        </section><!-- /.testimonials-one -->
+        </section>
 
         <section class="blog-one">
             <div class="container">
@@ -1596,24 +776,24 @@
             }
             }'>
                     <div class="client-carousel__one__item">
-                        <img class="client-carousel__one__item__normal" src="assets/images/resources/brand-1-1.png" alt="ienet">
-                        <img class="client-carousel__one__item__hover" src="assets/images/resources/brand-1-1-hover.png" alt="ienet">
+                        <img class="client-carousel__one__item__normal" src="assets/images/resources/clients/cl1.png" alt="ienet">
+                        <img class="client-carousel__one__item__hover" src="assets/images/resources/clients/cl1t.png" alt="ienet">
                     </div><!-- /.owl-slide-item-->
                     <div class="client-carousel__one__item">
-                        <img class="client-carousel__one__item__normal" src="assets/images/resources/brand-1-2.png" alt="ienet">
-                        <img class="client-carousel__one__item__hover" src="assets/images/resources/brand-1-2-hover.png" alt="ienet">
+                        <img class="client-carousel__one__item__normal" src="assets/images/resources/clients/cl2.png" alt="ienet">
+                        <img class="client-carousel__one__item__hover" src="assets/images/resources/clients/cl2t.png" alt="ienet">
                     </div><!-- /.owl-slide-item-->
                     <div class="client-carousel__one__item">
-                        <img class="client-carousel__one__item__normal" src="assets/images/resources/brand-1-3.png" alt="ienet">
-                        <img class="client-carousel__one__item__hover" src="assets/images/resources/brand-1-3-hover.png" alt="ienet">
+                        <img class="client-carousel__one__item__normal" src="assets/images/resources/clients/cl3.png" alt="ienet">
+                        <img class="client-carousel__one__item__hover" src="assets/images/resources/clients/cl3t.png" alt="ienet">
                     </div><!-- /.owl-slide-item-->
                     <div class="client-carousel__one__item">
-                        <img class="client-carousel__one__item__normal" src="assets/images/resources/brand-1-4.png" alt="ienet">
-                        <img class="client-carousel__one__item__hover" src="assets/images/resources/brand-1-4-hover.png" alt="ienet">
+                        <img class="client-carousel__one__item__normal" src="assets/images/resources/clients/cl4.png" alt="ienet">
+                        <img class="client-carousel__one__item__hover" src="assets/images/resources/clients/cl4t.png" alt="ienet">
                     </div><!-- /.owl-slide-item-->
                     <div class="client-carousel__one__item">
-                        <img class="client-carousel__one__item__normal" src="assets/images/resources/brand-1-5.png" alt="ienet">
-                        <img class="client-carousel__one__item__hover" src="assets/images/resources/brand-1-5-hover.png" alt="ienet">
+                        <img class="client-carousel__one__item__normal" src="assets/images/resources/clients/cl5.png" alt="ienet">
+                        <img class="client-carousel__one__item__hover" src="assets/images/resources/clients/cl5t.png" alt="ienet">
                     </div><!-- /.owl-slide-item-->
                 </div><!-- /.thm-owl__slider -->
             </div><!-- /.container -->
@@ -1630,11 +810,11 @@
                         <ul class="list-unstyled main-footer__top__info">
                             <li class="main-footer__top__info__item">
                                 <span class="main-footer__top__info__icon"><i class="icon-mail"></i></span>
-                                <a href="mailto:info@ienetmail.com">info@ienetmail.com</a>
+                                <a href="mailto:info@netsolkwt.com">info@netsolkwt.com</a>
                             </li>
                             <li class="main-footer__top__info__item">
                                 <span class="main-footer__top__info__icon"><i class="icon-maps-and-flags"></i></span>
-                                1211 Madison Ave, New York, NY
+                                2, First Floor, Salmiya Center Complex, Hadiya 52285 - Kuwait
                             </li>
                         </ul><!-- /.list-unstyled topbar-one__info -->
                         <div class="main-footer__top__right">
@@ -1664,7 +844,7 @@
             <div class="container">
                 <div class="main-footer__middle">
                     <a href="index.html">
-                        <img src="assets/images/logo-light.png" height="80" alt="Ienet HTML Template">
+                        <img src="assets/images/netsol-white.png" height="80" alt="Ienet HTML Template">
                     </a>
                     <form action="#" data-url="MAILCHIMP_FORM_URL" class="footer-widget__newsletter mc-form">
                         <span class="footer-widget__newsletter__icon"><i class="icon-mail"></i></span>
@@ -1672,11 +852,7 @@
                         <button type="submit" class="ienet-btn"><span>Subscribe Now</span></button>
                         <div class="mc-form__response"></div><!-- /.mc-form__response -->
                     </form><!-- /.footer-widget__newsletter mc-form -->
-                    <div class="main-footer__middle__call">
-                        <div class="main-footer__middle__call__icon"><span class="icon-telephone"></span></div>
-                        <div class="main-footer__middle__call__title">Call Emergency</div>
-                        <a class="main-footer__middle__call__text" href="tel:88012365499">+88 0123 654 99</a>
-                    </div>
+                    
                 </div><!-- /.main-footer__middle -->
             </div><!-- /.container -->
             <div class="container">
@@ -1685,7 +861,7 @@
                         <div class="footer-widget footer-widget--about">
                             <h2 class="footer-widget__title">About Ienet</h2><!-- /.footer-widget__title -->
                             <p class="footer-widget__text">
-                                There are two main types: solar photovoltaic (PV) systems for electricity generation and
+                                Netsol, Kuwait’s leading provider of Information and Communication Technology (ICT) / Extra Low Voltage (ELV) & Security Solutions.
                             </p>
                             <a href="about.html" class="ienet-btn"><span>Get In Touch<span class="ienet-btn__icon"><i class="fas fa-chevron-right"></i></span></span></a>
                         </div>
@@ -1694,11 +870,11 @@
                         <div class="footer-widget footer-widget--links">
                             <h2 class="footer-widget__title">our services</h2><!-- /.footer-widget__title -->
                             <ul class="list-unstyled footer-widget__links">
-                                <li><a href="service-d-broadband.html">Fiber & Broadband</a></li>
-                                <li><a href="service-d-cyber-security.html">Cyber Security</a></li>
-                                <li><a href="service-d-tv.html">Amazon Box TV</a></li>
-                                <li><a href="service-d-iptv.html">Smart IPTV</a></li>
-                                <li><a href="service-d-connectivity.html">Smart Connectivity</a></li>
+                                <li><a href="service-d-broadband.html">ICT Solutions</a></li>
+                                <li><a href="service-d-cyber-security.html">Structured Cabling</a></li>
+                                <li><a href="service-d-tv.html">Data Center Solutions</a></li>
+                                <li><a href="service-d-iptv.html">Cyber Security</a></li>
+                                <li><a href="service-d-connectivity.html">Security Solutions</a></li>
                             </ul><!-- /.list-unstyled footer-widget__links -->
                         </div><!-- /.footer-widget -->
                     </div><!-- /.col-md-6 -->
@@ -1707,36 +883,22 @@
                             <h2 class="footer-widget__title">useful links</h2><!-- /.footer-widget__title -->
                             <ul class="list-unstyled footer-widget__links">
                                 <li><a href="about.html">About Us</a></li>
-                                <li><a href="movie.html">Our Movie</a></li>
-                                <li><a href="blog-grid-right.html">News & Blog</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="movie.html">Our Projects</a></li>
+                                <li><a href="blog-grid-right.html">Products</a></li>
+                                <li><a href="faq.html">Testimonials</a></li>
                                 <li><a href="contact.html">Contacts</a></li>
                             </ul><!-- /.list-unstyled footer-widget__links -->
                         </div><!-- /.footer-widget -->
                     </div><!-- /.col-md-6 -->
                     <div class="col-md-6 col-xl-3">
                         <div class="footer-widget footer-widget--gallery">
-                            <h2 class="footer-widget__title">Our Gallery</h2><!-- /.footer-widget__title -->
-                            <div class="footer-widget__gallery">
-                                <a href="gallery.html" class="footer-widget__gallery__link">
-                                    <img src="assets/images/gallery/fg-1.jpg" alt="ienet">
-                                </a><!-- /.footer-widget__gallery__link -->
-                                <a href="gallery.html" class="footer-widget__gallery__link">
-                                    <img src="assets/images/gallery/fg-2.jpg" alt="ienet">
-                                </a><!-- /.footer-widget__gallery__link -->
-                                <a href="gallery.html" class="footer-widget__gallery__link">
-                                    <img src="assets/images/gallery/fg-3.jpg" alt="ienet">
-                                </a><!-- /.footer-widget__gallery__link -->
-                                <a href="gallery.html" class="footer-widget__gallery__link">
-                                    <img src="assets/images/gallery/fg-4.jpg" alt="ienet">
-                                </a><!-- /.footer-widget__gallery__link -->
-                                <a href="gallery.html" class="footer-widget__gallery__link">
-                                    <img src="assets/images/gallery/fg-5.jpg" alt="ienet">
-                                </a><!-- /.footer-widget__gallery__link -->
-                                <a href="gallery.html" class="footer-widget__gallery__link">
-                                    <img src="assets/images/gallery/fg-6.jpg" alt="ienet">
-                                </a><!-- /.footer-widget__gallery__link -->
-                            </div><!-- /.footer-widget__gallery -->
+                            <h2 class="footer-widget__title">For call</h2>
+                            <div class="main-footer__middle__call">
+                                <div class="main-footer__middle__call__icon"><span class="icon-telephone"></span></div>
+                                <div class="main-footer__middle__call__title">For Enquiry</div>
+                                <a class="main-footer__middle__call__text" href="tel:+96525712548">+965 2571 2548</a>
+                                <a class="main-footer__middle__call__text" href="tel:88012365499">+965 2571 2496</a>
+                            </div>
                         </div>
                     </div><!-- /.col-md-6 -->
                 </div><!-- /.row -->
@@ -1745,7 +907,7 @@
                 <div class="container">
                     <div class="main-footer__bottom__inner">
                         <p class="main-footer__copyright">
-                            &copy; Copyright <span class="dynamic-year"></span> by Ienet HTML Template.
+                            &copy; Copyright <span class="dynamic-year"></span> by Netsol. Developed by Wings2web.
                         </p>
                     </div><!-- /.main-footer__inner -->
                 </div><!-- /.container -->
@@ -1907,6 +1069,37 @@
     <script src="assets/vendors/gsap/ienet-split.js"></script>
     <!-- template js -->
     <script src="assets/js/ienet.js"></script>
+    <script>
+        const container = document.querySelector('.scroll-moving-container');
+        const floatingImg = container.querySelector('.scroll-moving-image');
+        let scrollTimeout;
+        const maxMove = window.innerHeight - floatingImg.clientHeight - 200; // Limit the movement based on viewport
+      
+        window.addEventListener('scroll', () => {
+          const scrollPosition = window.scrollY;
+          const offset = Math.min(scrollPosition * 0.2, maxMove); // Limit movement within viewport
+      
+          // Apply the scroll-based movement
+          container.style.transform = `translateY(${offset}px)`;
+      
+          // Clear any existing timeout to avoid starting the flying effect too early
+          clearTimeout(scrollTimeout);
+      
+          // Remove flying class during scroll
+          container.classList.remove('flying');
+      
+          // Set a timeout to detect when scrolling stops
+          scrollTimeout = setTimeout(() => {
+            // Add flying class after scrolling stops
+            container.classList.add('flying');
+          }, 300); // 300ms after scroll stops, the flying effect starts
+        });
+      
+        // Update maxMove dynamically if window is resized
+        window.addEventListener('resize', () => {
+          maxMove = window.innerHeight - floatingImg.clientHeight - 50;
+        });
+      </script>
 </body>
 
 
