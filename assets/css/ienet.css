@@ -13934,7 +13934,7 @@ body.megamenu-popup-active .mobile-nav__content {
   width: 100%;
   height: 100%;
   content: "";
-  background-color: rgba(var(--ienet-base-rgb, 223, 35, 57), 0.7);
+  background-color: #0090d2b3;
 }
 .feature-one__image__one img {
   max-width: 100%;
@@ -13951,6 +13951,7 @@ body.megamenu-popup-active .mobile-nav__content {
   max-width: 100%;
   height: auto;
   animation: treeMove2 4s linear 0s infinite;
+  display: none;
 }
 .feature-one__image__router {
   position: absolute;
