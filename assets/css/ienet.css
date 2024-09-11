@@ -15870,3 +15870,32 @@ body.boxed-wrapper .about-one__shape {
   margin: 0;
 }
 /*# sourceMappingURL=ienet.css.map */
+
+.clients_div {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 10px;
+  animation: fadeIn 1s ease-out;
+}
+
+.client-image {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  border: 1px solid #ddd;
+  width: 100px; 
+  height: 100px; 
+  overflow: hidden;
+  margin:15px;
+}
+.client-image:hover {
+border:none;
+box-shadow: 0px 0px 4px 1px #00000011;
+}
+
+.client-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
